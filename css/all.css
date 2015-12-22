@@ -8,8 +8,8 @@
 .container.centered,
 .cv-container.centered {
   margin-left: 50%;
-  width: 1000px;
-  left: -500px;
+  width: 960px;
+  left: -480px;
 }
 .row {
   margin: 5px 1% 0 1%;
@@ -176,7 +176,6 @@ body {
 }
 .cv-container .my-photo-container-outer .my-photo-container {
   height: 239px;
-  background-color: #f00;
   overflow: hidden;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -187,7 +186,7 @@ i.skype-icon {
 i.fa-white {
   color: #fff;
 }
-i .fo {
+i.fa {
   text-rendering: optimizeLegibility;
 }
 .with-top-margin:before {
@@ -220,4 +219,7 @@ i .fo {
 }
 #contacts {
   font-size: 9pt;
+}
+#contacts .fa {
+  font-size: 1.3em;
 }
