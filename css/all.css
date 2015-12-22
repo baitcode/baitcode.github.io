@@ -201,18 +201,21 @@ i .fo {
   width: 100%;
   height: 15pt;
 }
-.projects {
+.projects,
+.skills {
   width: 100%;
 }
-.projects .with-paragraph {
+.projects .with-paragraph,
+.skills .with-paragraph {
   padding-left: 14pt;
-  width: 50%;
 }
-.projects .project-name {
+.projects .project-name,
+.skills .project-name {
   width: 90%;
   padding-left: 14pt;
 }
-.projects .project-description {
+.projects .project-description,
+.skills .project-description {
   padding: 10pt 14pt 0 28pt;
   font-size: 9pt;
   line-height: 12pt;
