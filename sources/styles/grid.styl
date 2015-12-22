@@ -1,0 +1,75 @@
+
+column-count = 13
+margin-count = column-count * 2
+margin-size = 1
+line-gap = unit(5, px)
+
+single-column-width = (100 - margin-size * margin-count) / column-count
+
+mobile-width = 400
+desktop-width = 800
+
+container =
+  position: relative
+  float: left
+  display: block
+
+
+column(index)
+  margin-left: unit(margin-size, '%')
+  margin-right: unit(margin-size, '%')
+  width: unit(single-column-width * index + margin-size * 2 * (index - 1), '%')
+
+.container
+  position: relative
+  float: left
+  display: block
+  width: unit(100, '%')
+
+  &.centered
+    margin-left: 50%
+    width: unit(800, px)
+    left: unit(-400, px)
+
+.row
+  margin: line-gap unit(margin-size, '%') 0 unit(margin-size, '%')
+
+.col
+  {container}
+
+.col1
+  column(1)
+
+.col2
+  column(2)
+
+.col3
+  column(3)
+
+.col4
+  column(4)
+
+.col5
+  column(5)
+
+.col6
+  column(6)
+
+.col7
+  column(7)
+
+.col8
+  column(8)
+
+.col9
+  column(9)
+
+.col10
+  column(10)
+
+.col11
+  column(11)
+
+.col12
+  column(12)
+

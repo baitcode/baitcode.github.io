@@ -1,0 +1,90 @@
+@import grid
+@import nib
+@import typography
+@import code
+
+unit-value = pt
+
+body, div, p, h1, h2, h3, dt, dl
+  clearfix()
+  font-family: Menlo;
+  line-height 16pt
+
+td
+  padding: 0
+
+a
+  color: #6897BB
+
+dt, dl
+  display: inline-block
+  vertical-align: middle
+  line-height: unit(30, unit-value)
+
+body
+  background-color: #3A3A3A
+  margin: 0;
+  padding: 0;
+  color: #BBBBBB
+
+.photo-container
+  height: unit(300, unit-value)
+  width: unit(300, unit-value)
+  overflow: hidden
+
+.cv-container
+  @extend .container
+  background-color: #2B2B2B
+
+  border-left: 1px solid #555
+  border-right: 1px solid #555
+
+  overflow-y: scroll
+
+  .my-photo-container-outer
+    padding: 5px
+    border-radius: 5px
+    border: 1px solid #555
+    background-color: #3A3A3A
+    float: left
+
+    .my-photo-container
+      background-color: red
+      overflow: hidden
+      border-radius: 2px
+
+i
+  &.skype-icon
+    color: #00AFF0
+  &.fa-white
+    color: #FFFFFF
+
+.with-top-margin
+  &:before
+    content: " "
+    float: left
+    display: block
+    position: relative
+    width: 100%
+    height: unit(15, unit-value)
+
+.projects
+  width: 100%
+
+  .with-paragraph
+    padding-left: unit(20, unit-value)
+    width: 50%
+
+  .project-name
+    width: 90%
+    padding-left: unit(20, unit-value)
+
+  .project-description
+    padding: unit(10, unit-value) unit(20, unit-value) 0 unit(40, unit-value)
+    font-size: unit(9, unit-value)
+    line-height: unit(12, unit-value)
+    padding-bottom: unit(10, unit-value)
+    //text-align: justify
+
+#contacts
+  font-size: unit(9, unit-value)
