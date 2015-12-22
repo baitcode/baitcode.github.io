@@ -82,7 +82,7 @@
 @font-face {
   font-family: Menlo;
   font-style: normal;
-  src: url("https://github.com/hbin/top-programming-fonts/blob/master/Menlo-Regular.ttf");
+  src: url("../fonts/Menlo-Regular.ttf");
 }
 .comments {
   color: #629755;
@@ -178,6 +178,7 @@ body {
   float: left;
 }
 .cv-container .my-photo-container-outer .my-photo-container {
+  height: 239px;
   background-color: #f00;
   overflow: hidden;
   -webkit-border-radius: 2px;
