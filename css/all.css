@@ -96,6 +96,9 @@
 .highlight {
   color: #a5c261;
 }
+.todo {
+  color: #fff;
+}
 body,
 div,
 p,
