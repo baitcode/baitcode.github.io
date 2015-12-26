@@ -333,7 +333,7 @@
               </tr>
               <tr>
                 <td align="center"><i class="fa fa-white fa-envelope"></i>:</td>
-                <td>batiyiv at gmail dot com</td>
+                <td><a id="email_placeholder" href=""></a></td>
               </tr>
               <tr>
                 <td align="center"><i class="fa fa-linkedin skype-icon"></i>:</td>
@@ -356,6 +356,19 @@
 
     ga('create', 'UA-71618589-1', 'auto');
     ga('send', 'pageview');
+
+    (function(d){
+      var parts = [
+        "batiyiv",
+        "@",
+        "gmail.com"
+      ];
+      var email = parts.join("");
+      var element = d.getElementById("email_placeholder");
+      element.innerHTML = email;
+      console.log(d);
+      element.setAttribute("href", "mailto:" + email)
+    })(document)
 
   </script>
 </body>
