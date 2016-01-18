@@ -164,7 +164,7 @@ body {
   overflow: hidden;
 }
 .cv-container {
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 .cv-container .my-photo-container-outer {
   padding: 5px;
